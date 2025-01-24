@@ -15,17 +15,10 @@ def package_lookup(package_id):
     indexes = [(package_id, 1), (package_id, 2), (package_id, 3), (package_id, 4), (package_id, 6)]
     package_info = [package_array[row][column] for row, column in indexes]
         
-    return package_id,package_info
+    return package_info
     
 # Create the package objects
-packages = [" "]
-for i in range(1, len(package_array)):
-    package_object = Package(package_lookup(i))
-    packages.append(package_object)
-    
-    print(packages)
-    
-    
+
 # Create hashmap and load package objects
     
 # Create Truck objects and load packages with a loading algorithm
