@@ -8,7 +8,6 @@ class Pair:
         self.key = key
         self.val = val
         
-        
 class HashMap:
     def __init__(self):
         self.size = 0
@@ -74,7 +73,17 @@ class HashMap:
             if pair:
                 self.put(pair.key, pair.val)
                 
-    def printPairs(self):
+    def print_pairs(self):
         for pair in self.map:
             if pair:
                 print(pair.key, pair.val)
+                
+    def get_pairs(self):
+        for pair in self.map:
+            if pair:
+                return pair.key, pair.val
+            
+    def get_keys(self):
+        for pair in self.map:
+            if pair:
+                return pair.key

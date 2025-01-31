@@ -1,18 +1,22 @@
-import csv
+'''
+Each package has its own information, it is stored in the package object
+'''
 
 class Package: 
-    delivery_statuses = ["AtHub", "EnRoute", "Delivered"]
-    def __init__(self, package_id, address, city, state, zip, delivery_deadline, weight, truck=None, delivery_status=0):
+    def __init__(self, package_id, package_info):
         self.package_id = package_id
-        self.address = address
-        self.city = city
-        self.state = state
-        self.zip = zip
-        self.delivery_deadline = delivery_deadline
-        self.weight = weight
-        self.delivery_status = 0 
+        self.address = package_info[0]
+        self.city = package_info[1]
+        self.zip = package_info[2]
+        self.delivery_deadline = package_info[3]
+        self.weight = package_info[4]
+        self.delivery_statuses = ["AtHub", "EnRoute", "Delivered"]
+        self.delivery_status = 0
+        self.delivered_at = None
         self.truck = None
         
+    def __str__(self):
+        return f""    
         
         
         
