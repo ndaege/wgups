@@ -3,7 +3,7 @@ import csv
 import datetime
 import HashMap
 import Package
-import Truck
+import old_Truck
 
 # Read csv data files
 
@@ -36,9 +36,9 @@ for i in range(1, len(package_array)):
 
       
 # Create Truck objects and manifests
-truck1 = Truck.Truck(1, "4001 South 700 East")
-truck2 = Truck.Truck(2, "4001 South 700 East")
-truck3 = Truck.Truck(3, "4001 South 700 East")
+truck1 = old_Truck.Truck(1, "4001 South 700 East")
+truck2 = old_Truck.Truck(2, "4001 South 700 East")
+truck3 = old_Truck.Truck(3, "4001 South 700 East")
 
 truck1_manifest = [1, 7, 8, 13, 14, 15, 16, 20, 29, 30, 31, 34, 37, 39]
 truck2_manifest = [3, 4, 5, 6, 10, 11, 18, 25, 28, 32, 36, 38, 40]
